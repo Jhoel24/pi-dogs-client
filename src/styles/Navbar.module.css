@@ -1,0 +1,49 @@
+header {
+    padding: 1.5rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 0px 5px 16px -7px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 5px 16px -7px rgba(0,0,0,0.43);
+    box-shadow: 0px 5px 16px -7px rgba(0,0,0,0.43);
+
+}
+
+@media (max-width: 768px){
+    header {
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
+
+.logo p {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin: 0;
+    color: var(--color4);
+}
+
+.logo p span {
+    font-weight: 900;
+    color: var(--color2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+}
+
+@media(max-width: 768px){
+    .navbar {
+        margin-bottom: .5rem;
+    }
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 200;
+}

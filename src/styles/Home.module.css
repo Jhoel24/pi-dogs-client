@@ -1,0 +1,62 @@
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media (max-width:788px) {
+    .cardsContainer {
+        justify-content: center;
+    }
+}
+
+.buttons {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.next {
+    background-color: #12334e;
+    color: white;
+    padding: .5rem .8rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: .8rem;
+    border: 1px solid #12334e;
+    transition: all .2s ease-in;
+}
+
+.next:hover {
+    background-color: white;
+    color: #12334e;
+    border: 1px solid #12334e;
+    cursor: pointer;
+}
+
+.prev {
+    background-color: #FF5D5D;
+    color: white;
+    padding: .5rem .8rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: .8rem;
+    border: 1px solid #FF5D5D;
+    transition: all .2s ease-in;
+}
+
+.prev:hover {
+    background-color: white;
+    color: #FF5D5D;
+    border: 1px solid #FF5D5D;
+    cursor: pointer;
+}

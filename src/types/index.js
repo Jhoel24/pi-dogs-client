@@ -1,0 +1,5 @@
+export const OBTENER_DOGS = 'OBTENER_DOGS'
+export const BUSCAR_DOG = 'BUSCAR_DOG'
+export const SELECT_DOG = 'SELECT_DOG'
+export const LIMPIAR_DOG = 'LIMPIAR_DOG'
+export const OBTENER_TEMPERAMENTOS = 'OBTENER_TEMPERAMENTOS'

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+:root {
+  --color1: #EDDFB3;
+  --color2: #D8CCA3;
+  --color3: #B09B71;
+  --color4: #87805E;
+}
+
+body {
+  margin: 0;
+  font-family: 'Titillium Web', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f1f1f1;
+}
+
+/* Globals */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto 0 auto;
+  width: 95%;
+}
+
+.marker{
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: var(--color4);
+  bottom: -8px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.margin-top{
+  margin-top: 3rem;
+}
+
+img {
+  max-width: 100%;
+}

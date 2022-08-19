@@ -1,0 +1,29 @@
+@media(max-width: 768px) {
+    .containerSearchBar {
+        width: 95%;
+    }
+    .searchBar {
+        width: 100%;
+    }
+}
+
+.containerSearchBar {
+    position: relative;
+}
+
+.searchBar {
+    padding: .5rem .7rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    flex: 1;
+    /* position: relative; */
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}

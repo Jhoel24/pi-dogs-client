@@ -1,0 +1,61 @@
+.cardDetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardDetail h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.containerImage img {
+    border-radius: 5px;
+    width: 500px;
+}
+
+.temperament, .weight, .height, .spanLife {
+    font-size: 1.3rem;
+    margin: .5rem;
+    font-weight: 200;
+}
+
+@media(max-width: 768px){
+    .temperament, .weight, .height, .spanLife {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+.temperament span, .weight span, .height span, .spanLife span {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.button {
+    margin-top: 5rem;
+    padding: .3rem 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid var(--color3);
+    background-color: #fff;
+    color: var(--color3);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+@media (max-width:768px) {
+    .button {
+        font-size: 1rem;
+    }
+}
+
+.button:hover {
+    background-color: var(--color3);
+    color: #fff;
+}
