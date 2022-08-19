@@ -4,7 +4,7 @@ import { BUSCAR_DOG, LIMPIAR_DOG, OBTENER_DOGS, OBTENER_TEMPERAMENTOS, SELECT_DO
 export const getDogs = () => {
     return async dispatch => {
         try {
-            const { data } = await axios.get('http://localhost:3001/dogs') 
+            const { data } = await axios.get('https://pi-dogs-app-2022.herokuapp.com/dogs') 
             return dispatch({
                 type: OBTENER_DOGS,
                 payload: data
@@ -18,7 +18,7 @@ export const getDogs = () => {
 export const searchDog = dog => {
     return async dispatch => {
         try {
-            const { data } = await axios.get(`http://localhost:3001/dogs?name=${dog}`)
+            const { data } = await axios.get(`https://pi-dogs-app-2022.herokuapp.com/dogs?name=${dog}`)
             return dispatch({
                 type: BUSCAR_DOG,
                 payload: data
@@ -32,7 +32,7 @@ export const searchDog = dog => {
 export const selectDog = id => {
     return async dispatch => {
         try {
-            const { data } = await axios.get(`http://localhost:3001/dogs/${id}`)
+            const { data } = await axios.get(`https://pi-dogs-app-2022.herokuapp.com/dogs/${id}`)
             return dispatch({
                 type: SELECT_DOG,
                 payload: data
@@ -46,7 +46,7 @@ export const selectDog = id => {
 export const getTemperamentsToSelect = () => {
     return async dispatch => {
         try {
-            const { data } = await axios.get(`http://localhost:3001/temperaments`)
+            const { data } = await axios.get(`https://pi-dogs-app-2022.herokuapp.com/temperaments`)
             return dispatch({
                 type: OBTENER_TEMPERAMENTOS,
                 payload: data

@@ -64,7 +64,7 @@ const Form = () => {
                temperamentId: temperament
             }
 
-            await axios.post('http://localhost:3001/dogs', obj)
+            await axios.post('https://pi-dogs-app-2022.herokuapp.com/dogs', obj)
             setTimeout(() => {
                 setState([])
                 navigate('/home')
