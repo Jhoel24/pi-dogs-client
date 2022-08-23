@@ -1,0 +1,77 @@
+.contenedorAbout {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tituloPrincipal {
+    margin-top: 3rem;
+    font-size: 4rem;
+}
+
+@media (max-width:768px) {
+    .tituloPrincipal {
+        font-size: 2rem;
+    }
+}
+
+.developer {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.frontend, .backend {
+    font-size: 1.8rem;
+    margin: .5rem;
+}
+
+@media (max-width: 768px) {
+    .frontend, .backend {
+        font-size: 1.3rem;
+    }
+}
+
+.frontend span, .backend span {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.connect {
+    font-size: 5rem;
+    margin: 1.5rem 0;
+    font-weight: 200;
+}
+
+@media (max-width: 768px) {
+    .connect {
+        font-size: 3rem;
+    }
+}
+
+.containerSocialMedia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.containerSocialMedia a {
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width:768px) {
+    .containerSocialMedia a {
+        height: 75px;
+        width: 75px;
+    }
+}
+
+.containerSocialMedia a:hover {
+    cursor: pointer;
+}
